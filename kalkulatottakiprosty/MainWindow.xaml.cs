@@ -24,5 +24,21 @@ namespace kalkulatottakiprosty
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int x =Convert.ToInt32( XTextBox.Text);
+            int y = Convert.ToInt32(YTextBox.Text);
+
+            TextBlock.Text = (x + y).ToString();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            int x = Convert.ToInt32(XTextBox.Text);
+            int y = Convert.ToInt32(YTextBox.Text);
+
+            TextBlock.Text = (x - y).ToString();
+        }
     }
 }
